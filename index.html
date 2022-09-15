@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Valorador de obras</title>
+   
+</head>
+<body>
+    <div class="contenedorTit"></div>
+    <br>
+    <div class="fondoForm">
+    <form action=""">
+        <p>Qué tipo de obra es?</p>
+        <label for="definirObra"></label>
+            <select id="tipoElegido" >
+                <option value="">Elige tipo de obra</option>
+                <option value="2d">2d</option>
+                <option value="3d">3d</option>
+        </select>
+    <br>
+    <p>Cómo lo quieres valuar?</p>
+        <label for="valuar"></label>
+            <select id="accionElegida">
+                <option value="">Elige forma de valuar</option>
+                <option value="a">Por área/volumen ocupada/o</option>
+                <option value="b">Por horas trabajadas</option>
+        </select>
+    <!-- <div id="crearForm"></div>   --> 
+    <input type="text" placeholder="  título de la obra" id="titulo">
+    <br>
+    <input type="number"  placeholder="  año de ejecución" id="anio">
+    <br>
+    <input type="text" placeholder="  técnica" id="tecnica">
+    <br>
+    <input type="number"  placeholder="  alto" id="alto">
+    <br>
+    <input type="number"  placeholder="  ancho" id="ancho">
+    <br>
+    <input type="number"  placeholder="  profundidad" id="profundidad">
+    <br>
+    <input type="number" placeholder="  precio de obra con área 100 por 100cms" id="precioArea">
+    <br>
+    <input type="number" placeholder="  precio de obra con volumen 100 por 100 por 100cms" id="precioVolumen">
+    <br>
+    <input type="number"   placeholder="  valor de hora de trabajo"  id="horaReferencia">
+    <br>
+    <input type="number" placeholder="  horas trabajadas para realizar obra"  id="horasTrabajadas">
+    <br>
+    <br>
+    <label for="conservacion"></label>
+    <select id="conservacion">
+        <option value="">Es posible conservar fácilmente la obra?</option>
+        <option value="a">Si</option>
+        <option value="b">No</option>
+    </select>
+    <br>
+    <label for="Seleccion"></label>
+    <select id="seleccion">
+        <option value="">Selección en Concurso</option>
+        <option value="a">Salón Internacional</option>
+        <option value="b">Salón Nacional</option>
+        <option value="c">Salón Provincial</option>
+        <option value="d">No fue seleccionada</option>
+    </select>
+    <button type="submit">VALUAR</button>
+    </form>
+    </div>
+    <section>
+    <h2 class="infoObra">Información de la obra</h2>
+        <ul class="informDeObras">  
+        </ul>
+    <h2>Información descuentos</h2>
+        <ul class="informDesc">
+        </ul>
+    <h2>Información intereses</h2>
+        <ul class="informInteres">
+        </ul>
+    </section> 
+    <script src="js/usandoDom.js"></script>
+    <script src="js/simuladorConAlert.js"></script>
+</body>
+</html>
